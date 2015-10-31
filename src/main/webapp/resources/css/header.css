@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+header{
+	margin: auto;
+	/*background: url(banniere.jpg) no-repeat;*/
+	background-color: orange;
+	width: 100%;
+	height: 75px;
+	border-radius: 15px; 
+	text-align: center;
+	
+}
+
+#champRecherche{
+	display: inline;
+	float: left;
+	margin-top: 15px;
+}
+
+#titre{
+	display: inline;
+}
+
+#blocBoutons{
+	display: inline;
+	float: right;
+	margin-top: 15px;
+}
+
+#panier{
+	text-align: right;
+}
+
+
+

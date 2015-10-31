@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="2.0">
+	
+	<display-name>AdopteUnProjet</display-name><!-- 1. Page d'accueil -->
+	
+	<!-- Changer cette valeur à "Production" lors du déploiement final de l'application -->
+    <context-param>
+        <param-name>javax.faces.PROJECT_STAGE</param-name>
+        <param-value>Development</param-value>
+    </context-param>
+    
+	<servlet>
+		<servlet-name>Faces Servlet</servlet-name>
+		<servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Faces Servlet</servlet-name>
+		<url-pattern>*.jsf</url-pattern>
+	</servlet-mapping>
+	
+	<!-- page de démarrage du site -->
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+		
+	<!-- pas d'acces direct à un fichier  
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>no-direct-access</web-resource-name>
+			<url-pattern>*.html</url-pattern>
+		</web-resource-collection>
+		
+		<auth-constraint>
+			<description>acces direct interdit</description>
+		</auth-constraint>
+	</security-constraint>
+	-->
+	
+	
+</web-app>

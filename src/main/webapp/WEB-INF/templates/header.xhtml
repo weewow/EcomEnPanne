@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:t="http://myfaces.apache.org/tomahawk">
+
+<h:head>
+
+</h:head>
+
+<h:body>
+	<ui:composition>
+	<h:outputStylesheet name="css/header.css" />
+	<header>
+	<div id="champRecherche">
+		<h:inputText value="mots clefs" />
+		<h:commandButton action="#{nullBean.doNothing()}" value="rechercher" />
+	</div>
+
+	<h1 id="titre">Adopte Un Projet</h1>
+
+	<div id="blocBoutons">
+	<h:form>
+		<h:inputText value="login" />
+		<h:inputSecret value="password" />
+		<h:commandButton action="#{sessionBean.doLog()}" value="connexion" />
+		<h:commandButton action="#{nullBean.doNothing()}" value="inscription" />
+	</h:form>
+		
+	</div>
+
+	<div id="panier">
+		<h:commandButton action="#{nullBean.doNothing()}" value="panier" />
+	</div>
+
+	</header>
+	</ui:composition>
+</h:body>
+</html>

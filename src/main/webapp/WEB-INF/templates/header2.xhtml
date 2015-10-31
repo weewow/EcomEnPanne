@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:t="http://myfaces.apache.org/tomahawk">
+
+<head>
+	<title>"titre</title>
+	<h:outputStylesheet name="css/header.css" />
+</head>
+
+<body>
+	<ui:composition>
+	<h:outputStylesheet name="css/header.css" />
+	<header>
+		<div id="champRecherche">
+			<h:inputText value="NomBean/IdBean.attribut" />
+			<h:commandButton action="#{nullBean.doNothing()}" value="rechercher" />
+		</div>
+		
+		<h1 id="titre">Adopte Un Projet</h1>
+		
+		<div id="blocBoutons">
+			<h:commandButton action="#{nullBean.doNothing()}" value="profil" />
+			<h:commandButton action="#{nullBean.doNothing()}" value="deconnexion" />				
+		</div>
+		
+		<div id="panier">
+			<h:commandButton action="#{nullBean.doNothing()}" value="panier" />
+		</div>
+		
+	</header>
+	</ui:composition>
+</body>
+</html>
